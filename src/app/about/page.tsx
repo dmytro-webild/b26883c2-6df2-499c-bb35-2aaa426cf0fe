@@ -29,7 +29,7 @@ export default function AboutPage() {
               { name: "Team", id: "team"},
               { name: "Testimonials", id: "testimonials"},
               { name: "FAQ", id: "faq"},
-              { name: "Contact", id: "contact"},
+              { name: "Contact", id: "/contact"},
             ]}
             brandName="Lackawanna"
             />
@@ -38,17 +38,11 @@ export default function AboutPage() {
         <div id="about-content" className="pt-32 pb-24">
             <SplitAbout
                 title="About Lackawanna Barber Shop"
-                description="At Lackawanna, we are dedicated to preserving the art of traditional barbering while serving the modern man. With over two decades of experience, our commitment to quality, community, and precision cuts has made us a cornerstone of Morristown."
+                description={["At Lackawanna, we are dedicated to preserving the art of traditional barbering while serving the modern man. With over two decades of experience, our commitment to quality, community, and precision cuts has made us a cornerstone of Morristown."]}
                 textboxLayout="default"
                 useInvertedBackground={false}
-                bulletPoints={[
-                    { title: "Expert Precision", description: "Master barbers trained in both classic and contemporary styles." },
-                    { title: "Classic Atmosphere", description: "A warm, welcoming environment that honors the traditional barbershop experience." },
-                    { title: "Community Focused", description: "Proudly serving the Morristown area for over 20 years." }
-                ]}
                 imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201800-hefnk77v.jpg?_wi=2"
                 imageAlt="Lackawanna Barber Shop Interior"
-                mediaAnimation="slide-up"
             />
         </div>
 
@@ -56,7 +50,7 @@ export default function AboutPage() {
             <FooterLogoEmphasis
                 logoText="Lackawanna Barber Shop"
                 columns={[
-                { items: [{ label: "132 Morris St, Morristown, NJ", href: "#contact" }, { label: "+1 (973) 538-1675" }] },
+                { items: [{ label: "132 Morris St, Morristown, NJ", href: "/contact" }, { label: "+1 (973) 538-1675" }] },
                 { items: [{ label: "Services", href: "#services" }, { label: "Team", href: "#team" }, { label: "FAQs", href: "#faq" }] }
                 ]}
             />
