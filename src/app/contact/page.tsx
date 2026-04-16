@@ -3,9 +3,9 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import { useRouter } from "next/navigation";
-import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
-import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
-import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
+import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
+import ContactCTA from '@/components/sections/contact/ContactCTA';
+import FooterLogoReveal from '@/components/sections/footer/FooterLogoReveal';
 
 export default function ContactPage() {
   const router = useRouter();
@@ -24,44 +24,32 @@ export default function ContactPage() {
         headingFontWeight="extrabold"
     >
       <ReactLenis root>
-        <div id="nav">
-            <NavbarLayoutFloatingOverlay
-            navItems={[
-              { name: "Home", id: "/"},
-              { name: "About", id: "/about"},
-              { name: "Services", id: "/#services"},
-              { name: "Team", id: "/#team"},
-              { name: "Testimonials", id: "/#testimonials"},
-              { name: "FAQ", id: "/#faq"},
-              { name: "Contact", id: "/contact"},
-            ]}
-            brandName="Lackawanna"
+        <div id="nav" data-section="nav">
+            <NavbarStyleApple
+              navItems={[
+                { name: "Home", id: "/" },
+                { name: "About", id: "/about" },
+                { name: "Contact", id: "/contact" }
+              ]}
+              brandName="Lackawanna"
             />
         </div>
 
-        <div id="contact-content" className="pt-32 pb-24">
-            <ContactSplitForm
+        <div id="contact-content" data-section="contact-content" className="pt-32 pb-24">
+            <ContactCTA
+                tag="Contact"
                 title="Ready for your next cut?"
                 description="Stop by our Morristown shop or give us a call at (973) 538-1675 to inquire about wait times."
                 buttons={[{ text: "Submit", onClick: () => router.push("/") }]}
-                inputs={[
-                    { name: "name", type: "text", placeholder: "Your Name", required: true },
-                    { name: "email", type: "email", placeholder: "Your Email", required: true }
-                ]}
-                textarea={{ name: "message", placeholder: "Tell us what you're looking for..." }}
-                imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201800-hefnk77v.jpg"
                 useInvertedBackground={true}
-                mediaPosition="right"
             />
         </div>
 
-        <div id="footer">
-            <FooterLogoEmphasis
+        <div id="footer" data-section="footer">
+            <FooterLogoReveal
                 logoText="Lackawanna Barber Shop"
-                columns={[
-                { items: [{ label: "132 Morris St, Morristown, NJ", href: "/contact" }, { label: "+1 (973) 538-1675", href: "tel:+19735381675" }] },
-                { items: [{ label: "Home", href: "/" }, { label: "Services", href: "/#services" }, { label: "Team", href: "/#team" }, { label: "FAQs", href: "/#faq" }] }
-                ]}
+                leftLink={{ text: "Contact", href: "/contact" }}
+                rightLink={{ text: "Home", href: "/" }}
             />
         </div>
       </ReactLenis>
