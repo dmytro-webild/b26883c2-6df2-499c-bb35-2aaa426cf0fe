@@ -31,13 +31,13 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarLayoutFloatingOverlay
       navItems={[
-        { name: "About", id: "#about" },
-        { name: "Services", id: "#services" },
-        { name: "Team", id: "#team" },
-        { name: "Testimonials", id: "#testimonials" },
-        { name: "FAQ", id: "#faq" },
-        { name: "Contact", id: "#contact" },
-        { name: "Location", id: "#location" },
+        { name: "About", id: "about" },
+        { name: "Services", id: "services" },
+        { name: "Team", id: "team" },
+        { name: "Testimonials", id: "testimonials" },
+        { name: "FAQ", id: "faq" },
+        { name: "Contact", id: "contact" },
+        { name: "Location", id: "location" },
       ]}
       brandName="Lackawanna"
     />
