@@ -51,7 +51,6 @@ export default function LandingPage() {
         { value: "100%", label: "Satisfaction"},
       ]}
       enableKpiAnimation={true}
-      buttons={[{ text: "Book Now", href: "#contact" }]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201800-hefnk77v.jpg?_wi=1"
       imageAlt="Lackawanna Barber Shop"
       mediaAnimation="slide-up"
@@ -78,9 +77,9 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       plans={[
-        { id: "basic", badge: "Classic", price: "$40", subtitle: "Precision Haircut", buttons: [{ text: "Get Directions", href: "#contact" }], features: ["Classic Scissor Cut", "Modern Styling", "Expert Consultation"]},
-        { id: "pro", badge: "Premium", price: "$75", subtitle: "Full Grooming Experience", buttons: [{ text: "Get Directions", href: "#contact" }], features: ["Precision Haircut", "Beard Trim", "Hot Towel Service", "Relaxed Refresh"]},
-        { id: "kids", badge: "Family", price: "$30", subtitle: "Youth Haircut", buttons: [{ text: "Get Directions", href: "#contact" }], features: ["Gentle Scissor Cut", "Fast Friendly Service", "Classic Style"]},
+        { id: "basic", badge: "Classic", price: "$40", subtitle: "Precision Haircut", features: ["Classic Scissor Cut", "Modern Styling", "Expert Consultation"]},
+        { id: "pro", badge: "Premium", price: "$75", subtitle: "Full Grooming Experience", features: ["Precision Haircut", "Beard Trim", "Hot Towel Service", "Relaxed Refresh"]},
+        { id: "kids", badge: "Family", price: "$30", subtitle: "Youth Haircut", features: ["Gentle Scissor Cut", "Fast Friendly Service", "Classic Style"]},
       ]}
       title="Quality Service, Transparent Price"
       description="Simple, honest pricing for the services you need."
@@ -128,9 +127,6 @@ export default function LandingPage() {
         faqs={[
           { id: "q1", title: "Do you accept appointments?", content: "We operate primarily as a walk-in shop to maintain that classic, casual vibe." },
           { id: "q2", title: "Is it cash only?", content: "Yes, we are a classic cash-only establishment." },
-        ]}
-        buttons={[
-          { text: "Get Directions", href: "#contact" }
         ]}
         title="Common Questions"
         description="Everything you need to know about our barber shop services."
