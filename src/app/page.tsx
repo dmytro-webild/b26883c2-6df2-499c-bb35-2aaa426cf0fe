@@ -51,6 +51,7 @@ export default function LandingPage() {
         { value: "100%", label: "Satisfaction"},
       ]}
       enableKpiAnimation={true}
+      buttons={[{ text: "Book Now", href: "#contact" }]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201800-hefnk77v.jpg"
       imageAlt="Lackawanna Barber Shop"
       mediaAnimation="slide-up"
@@ -87,9 +88,9 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       plans={[
-        { id: "basic", badge: "Classic", price: "$40", subtitle: "Precision Haircut", buttons: [{ text: "Visit Our Shop", href: "#contact" }], features: ["Classic Scissor Cut", "Modern Styling", "Expert Consultation"]},
-        { id: "pro", badge: "Premium", price: "$75", subtitle: "Full Grooming Experience", buttons: [{ text: "Visit Our Shop", href: "#contact" }], features: ["Precision Haircut", "Beard Trim", "Hot Towel Service", "Relaxed Refresh"]},
-        { id: "kids", badge: "Family", price: "$30", subtitle: "Youth Haircut", buttons: [{ text: "Visit Our Shop", href: "#contact" }], features: ["Gentle Scissor Cut", "Fast Friendly Service", "Classic Style"]},
+        { id: "basic", badge: "Classic", price: "$40", subtitle: "Precision Haircut", buttons: [{ text: "Get Directions", href: "#contact" }], features: ["Classic Scissor Cut", "Modern Styling", "Expert Consultation"]},
+        { id: "pro", badge: "Premium", price: "$75", subtitle: "Full Grooming Experience", buttons: [{ text: "Get Directions", href: "#contact" }], features: ["Precision Haircut", "Beard Trim", "Hot Towel Service", "Relaxed Refresh"]},
+        { id: "kids", badge: "Family", price: "$30", subtitle: "Youth Haircut", buttons: [{ text: "Get Directions", href: "#contact" }], features: ["Gentle Scissor Cut", "Fast Friendly Service", "Classic Style"]},
       ]}
       title="Quality Service, Transparent Price"
       description="Simple, honest pricing for the services you need."
@@ -166,8 +167,8 @@ export default function LandingPage() {
       <FooterLogoEmphasis
         logoText="Lackawanna Barber Shop"
         columns={[
-          { items: [{ label: "132 Morris St, Morristown, NJ" }, { label: "+1 (973) 538-1675" }] },
-          { items: [{ label: "Services" }, { label: "Team" }, { label: "FAQs" }] }
+          { items: [{ label: "132 Morris St, Morristown, NJ", href: "#contact" }, { label: "+1 (973) 538-1675" }] },
+          { items: [{ label: "Services", href: "#services" }, { label: "Team", href: "#team" }, { label: "FAQs", href: "#faq" }] }
         ]}
       />
   </div>
