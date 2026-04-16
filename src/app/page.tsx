@@ -146,7 +146,7 @@ export default function LandingPage() {
       useInvertedBackground={false}
       background={{ variant: "sparkles-gradient" }}
       text="Ready for your next haircut? Stop by the shop today and meet the team. We look forward to seeing you!"
-      buttons={[{ text: "+1 (973) 538-1675", href: "tel:+19735381675" }]}
+      buttons={[{ text: "Visit our site! ", href: "tel:+19735381675" }]}
     />
   </div>
 
