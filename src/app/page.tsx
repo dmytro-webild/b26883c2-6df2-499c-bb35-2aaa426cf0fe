@@ -87,9 +87,9 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       plans={[
-        { id: "basic", badge: "Classic", price: "$40", subtitle: "Precision Haircut", buttons: [{ text: "Walk-in Only", href: "#contact" }], features: ["Classic Scissor Cut", "Modern Styling", "Expert Consultation"]},
-        { id: "pro", badge: "Premium", price: "$75", subtitle: "Full Grooming Experience", buttons: [{ text: "Walk-in Only", href: "#contact" }], features: ["Precision Haircut", "Beard Trim", "Hot Towel Service", "Relaxed Refresh"]},
-        { id: "kids", badge: "Family", price: "$30", subtitle: "Youth Haircut", buttons: [{ text: "Walk-in Only", href: "#contact" }], features: ["Gentle Scissor Cut", "Fast Friendly Service", "Classic Style"]},
+        { id: "basic", badge: "Classic", price: "$40", subtitle: "Precision Haircut", buttons: [{ text: "Visit Our Shop", href: "#contact" }], features: ["Classic Scissor Cut", "Modern Styling", "Expert Consultation"]},
+        { id: "pro", badge: "Premium", price: "$75", subtitle: "Full Grooming Experience", buttons: [{ text: "Visit Our Shop", href: "#contact" }], features: ["Precision Haircut", "Beard Trim", "Hot Towel Service", "Relaxed Refresh"]},
+        { id: "kids", badge: "Family", price: "$30", subtitle: "Youth Haircut", buttons: [{ text: "Visit Our Shop", href: "#contact" }], features: ["Gentle Scissor Cut", "Fast Friendly Service", "Classic Style"]},
       ]}
       title="Quality Service, Transparent Price"
       description="Simple, honest pricing for the services you need."
