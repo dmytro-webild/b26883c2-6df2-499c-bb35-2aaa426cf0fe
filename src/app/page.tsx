@@ -52,7 +52,7 @@ export default function LandingPage() {
       ]}
       enableKpiAnimation={true}
       buttons={[{ text: "Book Now", href: "#contact" }]}
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201800-hefnk77v.jpg"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201800-hefnk77v.jpg?_wi=1"
       imageAlt="Lackawanna Barber Shop"
       mediaAnimation="slide-up"
       avatars={[
