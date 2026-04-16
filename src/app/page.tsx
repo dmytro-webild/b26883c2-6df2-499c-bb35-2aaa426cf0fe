@@ -136,9 +136,9 @@ export default function LandingPage() {
       useInvertedBackground={false}
       team={[
         {
-          id: "t1",          name: "John Franco",          role: "Master Barber",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201801-l2nw3w51.jpg"},
+          id: "t1",          name: "John Franco",          role: "Master Barber",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352542504-tkr21jqa.png"},
         {
-          id: "t2",          name: "Elio",          role: "Old School Specialist",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201801-opcyony6.jpg"},
+          id: "t2",          name: "Elio",          role: "Old School Specialist",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352566826-2nyt55b1.jpg"},
       ]}
       title="Meet Your Staff"
       description="Our dedicated team is here to ensure you get the absolute best service in Morristown."
