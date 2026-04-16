@@ -149,7 +149,8 @@ export default function LandingPage() {
       useInvertedBackground={false}
       background={{ variant: "sparkles-gradient" }}
       text="Ready for your next haircut? Stop by the shop today and meet the team. We look forward to seeing you!"
-      buttons={[{ text: "Visit our site! ", href: "https://maps.apple.com/?address=Morristown,NJ" }]}
+      buttons={[{ text: "Visit our site! ", href: "https://maps.apple.com/?ll=40.7961,-74.4815&q=Lackawanna%20Barber%20Shop" }]
+      }
     />
   </div>
 
