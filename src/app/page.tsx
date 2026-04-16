@@ -147,6 +147,8 @@ export default function LandingPage() {
         textboxLayout="default"
         mediaPosition="right"
         useInvertedBackground={false}
+        imageSrc="http://img.b2bpic.net/free-photo/front-view-baber-shop-chiar_23-2148506337.jpg"
+        imageAlt="Lackawanna Barber Shop Interior"
       />
   </div>
 
