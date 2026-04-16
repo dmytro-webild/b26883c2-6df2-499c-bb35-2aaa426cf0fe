@@ -34,7 +34,7 @@ export default function LandingPage() {
         { name: "Team", id: "team"},
         { name: "Testimonials", id: "testimonials"},
         { name: "FAQ", id: "faq"},
-        { name: "Contact", id: "contact"},
+        { name: "Contact", id: "/contact"},
       ]}
       brandName="Lackawanna"
     />
@@ -77,9 +77,9 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       plans={[
-        { id: "basic", badge: "Classic", price: "$40", subtitle: "Precision Haircut", features: ["Classic Scissor Cut", "Modern Styling", "Expert Consultation"], buttons: [{text: "Book Now", href: "#contact"}]},
-        { id: "pro", badge: "Premium", price: "$75", subtitle: "Full Grooming Experience", features: ["Precision Haircut", "Beard Trim", "Hot Towel Service", "Relaxed Refresh"], buttons: [{text: "Book Now", href: "#contact"}]},
-        { id: "kids", badge: "Family", price: "$30", subtitle: "Youth Haircut", features: ["Gentle Scissor Cut", "Fast Friendly Service", "Classic Style"], buttons: [{text: "Book Now", href: "#contact"}]},
+        { id: "basic", badge: "Classic", price: "$40", subtitle: "Precision Haircut", features: ["Classic Scissor Cut", "Modern Styling", "Expert Consultation"], buttons: [{text: "Book Now", href: "/contact"}]},
+        { id: "pro", badge: "Premium", price: "$75", subtitle: "Full Grooming Experience", features: ["Precision Haircut", "Beard Trim", "Hot Towel Service", "Relaxed Refresh"], buttons: [{text: "Book Now", href: "/contact"}]},
+        { id: "kids", badge: "Family", price: "$30", subtitle: "Youth Haircut", features: ["Gentle Scissor Cut", "Fast Friendly Service", "Classic Style"], buttons: [{text: "Book Now", href: "/contact"}]},
       ]}
       title="Quality Service, Transparent Price"
       description="Simple, honest pricing for the services you need."
@@ -139,21 +139,11 @@ export default function LandingPage() {
       />
   </div>
 
-  <div id="contact" data-section="contact">
-      <ContactCenter
-        tag="Visit Us"
-        title="Ready for your next cut?"
-        description="Stop by our Morristown shop to experience the Lackawanna difference."
-        background={{ variant: "sparkles-gradient" }}
-        useInvertedBackground={true}
-      />
-  </div>
-
   <div id="footer" data-section="footer">
       <FooterLogoEmphasis
         logoText="Lackawanna Barber Shop"
         columns={[
-          { items: [{ label: "132 Morris St, Morristown, NJ", href: "#contact" }, { label: "+1 (973) 538-1675" }] },
+          { items: [{ label: "132 Morris St, Morristown, NJ", href: "/contact" }, { label: "+1 (973) 538-1675" }] },
           { items: [{ label: "Services", href: "#services" }, { label: "Team", href: "#team" }, { label: "FAQs", href: "#faq" }] }
         ]}
       />
