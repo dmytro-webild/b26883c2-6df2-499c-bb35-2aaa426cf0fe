@@ -29,7 +29,7 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarLayoutFloatingOverlay
       navItems={[
-        { name: "About", id: "about"},
+        { name: "About", id: "/about"},
         { name: "Services", id: "services"},
         { name: "Team", id: "team"},
         { name: "Testimonials", id: "testimonials"},
@@ -70,16 +70,6 @@ export default function LandingPage() {
         { type: "text", text: "Precision Styling" },
       ]}
     />
-  </div>
-
-  <div id="about" data-section="about" className="py-24 bg-background">
-    <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center">Shop Contact Information</h2>
-        <div className="text-center py-10">
-            <p className="text-lg font-medium">Location: Morristown, NJ</p>
-            <p className="text-lg font-medium">Phone: +1 (973) 538-1675</p>
-        </div>
-    </div>
   </div>
 
   <div id="services" data-section="services">
