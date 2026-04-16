@@ -138,6 +138,9 @@ export default function LandingPage() {
           { id: "q1", title: "Do you accept appointments?", content: "We operate primarily as a walk-in shop to maintain that classic, casual vibe." },
           { id: "q2", title: "Is it cash only?", content: "Yes, we are a classic cash-only establishment." },
         ]}
+        buttons={[
+          { text: "Get Directions", href: "#contact" }
+        ]}
         title="Common Questions"
         description="Everything you need to know about our barber shop services."
         faqsAnimation="slide-up"
