@@ -62,20 +62,18 @@ export default function LandingPage() {
           value: "100%",          label: "Satisfaction"},
       ]}
       enableKpiAnimation={true}
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776351836185-yyi4q32w.png?_wi=1"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201800-hefnk77v.jpg"
       imageAlt="Lackawanna Barber Shop"
       mediaAnimation="slide-up"
       avatars={[
         {
-          src: "http://img.b2bpic.net/free-photo/retro-theatre-scene-celebrate-world-theatre-day_23-2151211458.jpg",          alt: "Retro theatre scene"},
+          src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201800-hefnk77v.jpg",          alt: "Barber shop interior"},
         {
-          src: "http://img.b2bpic.net/free-photo/tall-bar-stool-wooden-background_181624-30147.jpg",          alt: "Barber chair"},
+          src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201801-bp8o0yyb.jpg",          alt: "Detail view"},
         {
-          src: "http://img.b2bpic.net/free-photo/hair-salon-chair-with-towel-armchair_23-2148242777.jpg",          alt: "Salon tools"},
+          src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201801-l2nw3w51.jpg",          alt: "Chair and tools"},
         {
-          src: "http://img.b2bpic.net/free-photo/retro-world-theatre-day-scenes-with-backstage_23-2151211363.jpg",          alt: "Interior detail"},
-        {
-          src: "http://img.b2bpic.net/free-photo/client-barber-greeting-each-other-barbershop_23-2148181951.jpg",          alt: "Barber service"},
+          src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201801-opcyony6.jpg",          alt: "Shop perspective"},
       ]}
       avatarText="Join 500+ satisfied clients"
       marqueeItems={[
@@ -102,7 +100,7 @@ export default function LandingPage() {
         {
           title: "Expert Care",          description: "Knowledgeable barbers who understand every hair type."},
       ]}
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776351836185-sni9tvqg.png?_wi=1"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201801-bp8o0yyb.jpg"
       mediaAnimation="blur-reveal"
     />
   </div>
@@ -138,9 +136,9 @@ export default function LandingPage() {
       useInvertedBackground={false}
       team={[
         {
-          id: "t1",          name: "John Franco",          role: "Master Barber",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776351836185-sni9tvqg.png?_wi=2"},
+          id: "t1",          name: "John Franco",          role: "Master Barber",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201801-l2nw3w51.jpg"},
         {
-          id: "t2",          name: "Elio",          role: "Old School Specialist",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776351836185-yyi4q32w.png?_wi=2"},
+          id: "t2",          name: "Elio",          role: "Old School Specialist",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201801-opcyony6.jpg"},
       ]}
       title="Meet Your Staff"
       description="Our dedicated team is here to ensure you get the absolute best service in Morristown."
