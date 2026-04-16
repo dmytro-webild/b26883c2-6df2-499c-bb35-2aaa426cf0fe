@@ -8,10 +8,8 @@ import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import HeroSplitKpi from '@/components/sections/hero/HeroSplitKpi';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import PricingCardEight from '@/components/sections/pricing/PricingCardEight';
-import SplitAbout from '@/components/sections/about/SplitAbout';
 import TeamCardFive from '@/components/sections/team/TeamCardFive';
 import TestimonialCardSixteen from '@/components/sections/testimonial/TestimonialCardSixteen';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 export default function LandingPage() {
   return (
@@ -31,12 +29,12 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarLayoutFloatingOverlay
       navItems={[
-        { name: "About", id: "#about"},
-        { name: "Services", id: "#services"},
-        { name: "Team", id: "#team"},
-        { name: "Testimonials", id: "#testimonials"},
-        { name: "FAQ", id: "#faq"},
-        { name: "Contact", id: "#contact"},
+        { name: "About", id: "about"},
+        { name: "Services", id: "services"},
+        { name: "Team", id: "team"},
+        { name: "Testimonials", id: "testimonials"},
+        { name: "FAQ", id: "faq"},
+        { name: "Contact", id: "contact"},
       ]}
       brandName="Lackawanna"
     />
@@ -73,23 +71,13 @@ export default function LandingPage() {
     />
   </div>
 
-  <div id="about" data-section="about" className="py-24">
+  <div id="about" data-section="about" className="py-24 bg-background">
     <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 text-center">Shop Contact Information</h2>
-        <Table>
-            <TableHeader>
-                <TableRow>
-                    <TableHead>Location</TableHead>
-                    <TableHead>Phone Number</TableHead>
-                </TableRow>
-            </TableHeader>
-            <TableBody>
-                <TableRow>
-                    <TableCell>Morristown, NJ</TableCell>
-                    <TableCell>+1 (973) 538-1675</TableCell>
-                </TableRow>
-            </TableBody>
-        </Table>
+        <div className="text-center py-10">
+            <p className="text-lg font-medium">Location: Morristown, NJ</p>
+            <p className="text-lg font-medium">Phone: +1 (973) 538-1675</p>
+        </div>
     </div>
   </div>
 
