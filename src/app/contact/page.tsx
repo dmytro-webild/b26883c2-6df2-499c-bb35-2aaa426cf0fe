@@ -3,7 +3,7 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
-import ContactCenter from '@/components/sections/contact/ContactCenter';
+import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
 
 export default function ContactPage() {
@@ -25,10 +25,10 @@ export default function ContactPage() {
             <NavbarLayoutFloatingOverlay
             navItems={[
               { name: "About", id: "/about"},
-              { name: "Services", id: "services"},
-              { name: "Team", id: "team"},
-              { name: "Testimonials", id: "testimonials"},
-              { name: "FAQ", id: "faq"},
+              { name: "Services", id: "/#services"},
+              { name: "Team", id: "/#team"},
+              { name: "Testimonials", id: "/#testimonials"},
+              { name: "FAQ", id: "/#faq"},
               { name: "Contact", id: "/contact"},
             ]}
             brandName="Lackawanna"
@@ -36,12 +36,17 @@ export default function ContactPage() {
         </div>
 
         <div id="contact-content" className="pt-32 pb-24">
-            <ContactCenter
-                tag="Visit Us"
+            <ContactSplitForm
                 title="Ready for your next cut?"
-                description="Stop by our Morristown shop to experience the Lackawanna difference."
-                background={{ variant: "sparkles-gradient" }}
+                description="Stop by our Morristown shop or give us a call at (973) 538-1675 to inquire about wait times."
+                inputs={[
+                    { name: "name", type: "text", placeholder: "Your Name", required: true },
+                    { name: "email", type: "email", placeholder: "Your Email", required: true }
+                ]}
+                textarea={{ name: "message", placeholder: "Tell us what you're looking for..." }}
+                imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201800-hefnk77v.jpg"
                 useInvertedBackground={true}
+                mediaPosition="right"
             />
         </div>
 
@@ -49,8 +54,8 @@ export default function ContactPage() {
             <FooterLogoEmphasis
                 logoText="Lackawanna Barber Shop"
                 columns={[
-                { items: [{ label: "132 Morris St, Morristown, NJ", href: "/contact" }, { label: "+1 (973) 538-1675" }] },
-                { items: [{ label: "Services", href: "#services" }, { label: "Team", href: "#team" }, { label: "FAQs", href: "#faq" }] }
+                { items: [{ label: "132 Morris St, Morristown, NJ", href: "/contact" }, { label: "+1 (973) 538-1675", href: "tel:+19735381675" }] },
+                { items: [{ label: "Services", href: "/#services" }, { label: "Team", href: "/#team" }, { label: "FAQs", href: "/#faq" }] }
                 ]}
             />
         </div>
