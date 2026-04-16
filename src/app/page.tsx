@@ -118,6 +118,9 @@ export default function LandingPage() {
       testimonials={[
         { id: "1", name: "Barry H.", role: "Loyal Customer", company: "FL", rating: 5 },
         { id: "2", name: "Melissa C.", role: "Regular Client", company: "NY", rating: 5 },
+        { id: "3", name: "Tom K.", role: "Local Resident", company: "NJ", rating: 5 },
+        { id: "4", name: "Sarah J.", role: "Frequent Visitor", company: "NJ", rating: 5 },
+        { id: "5", name: "Michael P.", role: "Client", company: "NY", rating: 5 },
       ]}
       kpiItems={[
         { value: "100+", label: "Weekly Cuts" },
