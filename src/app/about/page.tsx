@@ -3,7 +3,7 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
-import SplitAbout from '@/components/sections/about/SplitAbout';
+import TextSplitAbout from '@/components/sections/about/TextSplitAbout';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
 
 export default function AboutPage() {
@@ -21,37 +21,31 @@ export default function AboutPage() {
         headingFontWeight="extrabold"
     >
       <ReactLenis root>
-        <div id="nav">
+        <div id="nav" data-section="nav">
             <NavbarLayoutFloatingOverlay
             navItems={[
+              { name: "Home", id: "/"},
               { name: "About", id: "/about"},
-              { name: "Services", id: "services"},
-              { name: "Team", id: "team"},
-              { name: "Testimonials", id: "testimonials"},
-              { name: "FAQ", id: "faq"},
               { name: "Contact", id: "/contact"},
             ]}
             brandName="Lackawanna"
             />
         </div>
 
-        <div id="about-content" className="pt-32 pb-24">
-            <SplitAbout
+        <div id="about-content" data-section="about-content" className="pt-32 pb-24">
+            <TextSplitAbout
                 title="About Lackawanna Barber Shop"
                 description={["At Lackawanna, we are dedicated to preserving the art of traditional barbering while serving the modern man. With over two decades of experience, our commitment to quality, community, and precision cuts has made us a cornerstone of Morristown."]}
-                textboxLayout="default"
                 useInvertedBackground={false}
-                imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201800-hefnk77v.jpg?_wi=2"
-                imageAlt="Lackawanna Barber Shop Interior"
             />
         </div>
 
-        <div id="footer">
+        <div id="footer" data-section="footer">
             <FooterLogoEmphasis
                 logoText="Lackawanna Barber Shop"
                 columns={[
-                { items: [{ label: "132 Morris St, Morristown, NJ", href: "/contact" }, { label: "+1 (973) 538-1675" }] },
-                { items: [{ label: "Services", href: "#services" }, { label: "Team", href: "#team" }, { label: "FAQs", href: "#faq" }] }
+                { items: [{ label: "132 Morris St, Morristown, NJ", href: "/contact" }, { label: "+1 (973) 538-1675", href: "tel:+19735381675" }] },
+                { items: [{ label: "Services", href: "/#services" }, { label: "Team", href: "/#team" }, { label: "FAQs", href: "/#faq" }] }
                 ]}
             />
         </div>
