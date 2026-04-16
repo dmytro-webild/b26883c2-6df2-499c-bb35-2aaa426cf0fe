@@ -77,9 +77,9 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       plans={[
-        { id: "basic", badge: "Classic", price: "$40", subtitle: "Precision Haircut", features: ["Classic Scissor Cut", "Modern Styling", "Expert Consultation"]},
-        { id: "pro", badge: "Premium", price: "$75", subtitle: "Full Grooming Experience", features: ["Precision Haircut", "Beard Trim", "Hot Towel Service", "Relaxed Refresh"]},
-        { id: "kids", badge: "Family", price: "$30", subtitle: "Youth Haircut", features: ["Gentle Scissor Cut", "Fast Friendly Service", "Classic Style"]},
+        { id: "basic", badge: "Classic", price: "$40", subtitle: "Precision Haircut", features: ["Classic Scissor Cut", "Modern Styling", "Expert Consultation"], buttons: [{text: "Book Now", href: "#contact"}]},
+        { id: "pro", badge: "Premium", price: "$75", subtitle: "Full Grooming Experience", features: ["Precision Haircut", "Beard Trim", "Hot Towel Service", "Relaxed Refresh"], buttons: [{text: "Book Now", href: "#contact"}]},
+        { id: "kids", badge: "Family", price: "$30", subtitle: "Youth Haircut", features: ["Gentle Scissor Cut", "Fast Friendly Service", "Classic Style"], buttons: [{text: "Book Now", href: "#contact"}]},
       ]}
       title="Quality Service, Transparent Price"
       description="Simple, honest pricing for the services you need."
