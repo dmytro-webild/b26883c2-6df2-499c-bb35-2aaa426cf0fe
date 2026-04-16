@@ -62,7 +62,7 @@ export default function LandingPage() {
           value: "100%",          label: "Satisfaction"},
       ]}
       enableKpiAnimation={true}
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776351836185-yyi4q32w.png"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776351836185-yyi4q32w.png?_wi=1"
       imageAlt="Lackawanna Barber Shop"
       mediaAnimation="slide-up"
       avatars={[
@@ -102,7 +102,7 @@ export default function LandingPage() {
         {
           title: "Expert Care",          description: "Knowledgeable barbers who understand every hair type."},
       ]}
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776351836185-sni9tvqg.png"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776351836185-sni9tvqg.png?_wi=1"
       mediaAnimation="blur-reveal"
     />
   </div>
@@ -138,9 +138,9 @@ export default function LandingPage() {
       useInvertedBackground={false}
       team={[
         {
-          id: "t1",          name: "John Franco",          role: "Master Barber",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776351836185-sni9tvqg.png"},
+          id: "t1",          name: "John Franco",          role: "Master Barber",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776351836185-sni9tvqg.png?_wi=2"},
         {
-          id: "t2",          name: "Elio",          role: "Old School Specialist",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776351836185-yyi4q32w.png"},
+          id: "t2",          name: "Elio",          role: "Old School Specialist",          imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776351836185-yyi4q32w.png?_wi=2"},
       ]}
       title="Meet Your Staff"
       description="Our dedicated team is here to ensure you get the absolute best service in Morristown."
