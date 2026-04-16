@@ -2,11 +2,14 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
+import { useRouter } from "next/navigation";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
 
 export default function ContactPage() {
+  const router = useRouter();
+
   return (
     <ThemeProvider
         defaultButtonVariant="expand-hover"
@@ -24,6 +27,7 @@ export default function ContactPage() {
         <div id="nav">
             <NavbarLayoutFloatingOverlay
             navItems={[
+              { name: "Home", id: "/"},
               { name: "About", id: "/about"},
               { name: "Services", id: "/#services"},
               { name: "Team", id: "/#team"},
@@ -39,6 +43,7 @@ export default function ContactPage() {
             <ContactSplitForm
                 title="Ready for your next cut?"
                 description="Stop by our Morristown shop or give us a call at (973) 538-1675 to inquire about wait times."
+                buttons={[{ text: "Submit", onClick: () => router.push("/") }]}
                 inputs={[
                     { name: "name", type: "text", placeholder: "Your Name", required: true },
                     { name: "email", type: "email", placeholder: "Your Email", required: true }
@@ -55,7 +60,7 @@ export default function ContactPage() {
                 logoText="Lackawanna Barber Shop"
                 columns={[
                 { items: [{ label: "132 Morris St, Morristown, NJ", href: "/contact" }, { label: "+1 (973) 538-1675", href: "tel:+19735381675" }] },
-                { items: [{ label: "Services", href: "/#services" }, { label: "Team", href: "/#team" }, { label: "FAQs", href: "/#faq" }] }
+                { items: [{ label: "Home", href: "/" }, { label: "Services", href: "/#services" }, { label: "Team", href: "/#team" }, { label: "FAQs", href: "/#faq" }] }
                 ]}
             />
         </div>
