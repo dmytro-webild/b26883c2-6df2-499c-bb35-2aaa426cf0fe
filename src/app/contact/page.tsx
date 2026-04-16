@@ -41,6 +41,7 @@ export default function ContactPage() {
                 title="Ready for your next cut?"
                 description="Stop by our Morristown shop or give us a call at (973) 538-1675 to inquire about wait times."
                 buttons={[{ text: "Submit", onClick: () => router.push("/") }]}
+                background={{ variant: "plain" }}
                 useInvertedBackground={true}
             />
         </div>
