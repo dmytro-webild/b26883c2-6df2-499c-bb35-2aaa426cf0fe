@@ -2,9 +2,9 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactText from '@/components/sections/contact/ContactText';
-import FaqSplitText from '@/components/sections/faq/FaqSplitText';
-import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
+import ContactCenter from '@/components/sections/contact/ContactCenter';
+import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
+import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
 import HeroSplitKpi from '@/components/sections/hero/HeroSplitKpi';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import PricingCardEight from '@/components/sections/pricing/PricingCardEight';
@@ -133,35 +133,38 @@ export default function LandingPage() {
   </div>
 
   <div id="faq" data-section="faq">
-      <FaqSplitText
-      useInvertedBackground={false}
-      faqs={[
-        { id: "q1", title: "Do you accept appointments?", content: "We operate primarily as a walk-in shop to maintain that classic, casual vibe." },
-        { id: "q2", title: "Is it cash only?", content: "Yes, we are a classic cash-only establishment." },
-      ]}
-      sideTitle="Common Questions"
-      faqsAnimation="blur-reveal"
-    />
+      <FaqSplitMedia
+        faqs={[
+          { id: "q1", title: "Do you accept appointments?", content: "We operate primarily as a walk-in shop to maintain that classic, casual vibe." },
+          { id: "q2", title: "Is it cash only?", content: "Yes, we are a classic cash-only establishment." },
+        ]}
+        title="Common Questions"
+        description="Everything you need to know about our barber shop services."
+        faqsAnimation="slide-up"
+        textboxLayout="default"
+        mediaPosition="right"
+        useInvertedBackground={false}
+      />
   </div>
 
   <div id="contact" data-section="contact">
-      <ContactText
-      useInvertedBackground={false}
-      background={{ variant: "sparkles-gradient" }}
-      text="Ready for your next haircut? Stop by the shop today and meet the team. We look forward to seeing you!"
-      buttons={[{ text: "Visit our site! ", href: "https://maps.apple.com/?address=132%20Morris%20St,%20Morristown,%20NJ%2007960,%20United%20States&auid=8753261623837947136&ll=40.795770,-74.481350&q=Lackawanna%20Barber%20Shop" }]
-      }
-    />
+      <ContactCenter
+        tag="Visit Us"
+        title="Ready for your next cut?"
+        description="Stop by our Morristown shop to experience the Lackawanna difference."
+        background={{ variant: "sparkles-gradient" }}
+        useInvertedBackground={true}
+      />
   </div>
 
   <div id="footer" data-section="footer">
-      <FooterBaseReveal
-      logoText="Lackawanna Barber Shop"
-      columns={[
-        { title: "Shop", items: [{ label: "Morristown, NJ", href: "#" }] },
-      ]}
-      copyrightText="© 2024 Lackawanna Barber Shop. All rights reserved."
-    />
+      <FooterLogoEmphasis
+        logoText="Lackawanna Barber Shop"
+        columns={[
+          { items: [{ label: "132 Morris St, Morristown, NJ" }, { label: "+1 (973) 538-1675" }] },
+          { items: [{ label: "Services" }, { label: "Team" }, { label: "FAQs" }] }
+        ]}
+      />
   </div>
       </ReactLenis>
     </ThemeProvider>
