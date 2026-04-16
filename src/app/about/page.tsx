@@ -46,7 +46,7 @@ export default function AboutPage() {
                     { title: "Classic Atmosphere", description: "A warm, welcoming environment that honors the traditional barbershop experience." },
                     { title: "Community Focused", description: "Proudly serving the Morristown area for over 20 years." }
                 ]}
-                imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201800-hefnk77v.jpg"
+                imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201800-hefnk77v.jpg?_wi=2"
                 imageAlt="Lackawanna Barber Shop Interior"
                 mediaAnimation="slide-up"
             />
