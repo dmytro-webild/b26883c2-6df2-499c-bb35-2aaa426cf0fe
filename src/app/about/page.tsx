@@ -45,7 +45,7 @@ export default function AboutPage() {
                 logoText="Lackawanna Barber Shop"
                 columns={[
                 { items: [{ label: "132 Morris St, Morristown, NJ", href: "/contact" }, { label: "+1 (973) 538-1675", href: "tel:+19735381675" }] },
-                { items: [{ label: "Services", href: "/#services" }, { label: "Team", href: "/#team" }, { label: "FAQs", href: "/#faq" }] }
+                { items: [{ label: "Services", href: "/services" }, { label: "Team", href: "/team" }, { label: "FAQs", href: "/faq" }] }
                 ]}
             />
         </div>
