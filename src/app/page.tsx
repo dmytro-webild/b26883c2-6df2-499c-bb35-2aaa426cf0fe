@@ -77,9 +77,9 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       plans={[
-        { id: "basic", badge: "Classic", price: "$40", subtitle: "Precision Haircut", features: ["Classic Scissor Cut", "Modern Styling", "Expert Consultation"], buttons: [{text: "Book Now", href: "/contact"}]},
-        { id: "pro", badge: "Premium", price: "$75", subtitle: "Full Grooming Experience", features: ["Precision Haircut", "Beard Trim", "Hot Towel Service", "Relaxed Refresh"], buttons: [{text: "Book Now", href: "/contact"}]},
-        { id: "kids", badge: "Family", price: "$30", subtitle: "Youth Haircut", features: ["Gentle Scissor Cut", "Fast Friendly Service", "Classic Style"], buttons: [{text: "Book Now", href: "/contact"}]},
+        { id: "basic", badge: "Classic", price: "$40", subtitle: "Precision Haircut", features: ["Classic Scissor Cut", "Modern Styling", "Expert Consultation"], buttons: [{text: "Contact Us", href: "/contact"}]},
+        { id: "pro", badge: "Premium", price: "$75", subtitle: "Full Grooming Experience", features: ["Precision Haircut", "Beard Trim", "Hot Towel Service", "Relaxed Refresh"], buttons: [{text: "Contact Us", href: "/contact"}]},
+        { id: "kids", badge: "Family", price: "$30", subtitle: "Youth Haircut", features: ["Gentle Scissor Cut", "Fast Friendly Service", "Classic Style"], buttons: [{text: "Contact Us", href: "/contact"}]},
       ]}
       title="Quality Service, Transparent Price"
       description="Simple, honest pricing for the services you need."
@@ -143,8 +143,8 @@ export default function LandingPage() {
       <FooterLogoEmphasis
         logoText="Lackawanna Barber Shop"
         columns={[
-          { items: [{ label: "132 Morris St, Morristown, NJ", href: "/contact" }, { label: "+1 (973) 538-1675" }] },
-          { items: [{ label: "Services", href: "#services" }, { label: "Team", href: "#team" }, { label: "FAQs", href: "#faq" }] }
+          { items: [{ label: "132 Morris St, Morristown, NJ", href: "/contact" }, { label: "+1 (973) 538-1675", href: "/contact" }] },
+          { items: [{ label: "Services", href: "/#services" }, { label: "Team", href: "/#team" }, { label: "FAQs", href: "/#faq" }] }
         ]}
       />
   </div>
