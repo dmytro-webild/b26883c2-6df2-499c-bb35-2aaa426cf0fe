@@ -103,6 +103,7 @@ export default function LandingPage() {
     <TestimonialCardTwo
         animationType="slide-up"
         textboxLayout="default"
+        useInvertedBackground={false}
         title="Testimonials"
         description="See what our clients say about our work."
         testimonials={[
