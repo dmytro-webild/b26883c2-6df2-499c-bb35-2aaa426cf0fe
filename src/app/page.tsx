@@ -29,10 +29,10 @@ export default function LandingPage() {
       <NavbarLayoutFloatingOverlay
       navItems={[
         { name: "About", id: "/about"},
-        { name: "Services", id: "#services"},
-        { name: "Team", id: "#team"},
-        { name: "Testimonials", id: "#testimonials"},
-        { name: "FAQ", id: "#faq"},
+        { name: "Services", id: "/services"},
+        { name: "Team", id: "/team"},
+        { name: "Testimonials", id: "/testimonials"},
+        { name: "FAQ", id: "/faq"},
         { name: "Contact", id: "/contact"},
       ]}
       brandName="Lackawanna"
@@ -146,7 +146,7 @@ export default function LandingPage() {
         logoText="Lackawanna Barber Shop"
         columns={[
           { items: [{ label: "132 Morris St, Morristown, NJ", href: "/contact" }, { label: "+1 (973) 538-1675", href: "/contact" }] },
-          { items: [{ label: "Services", href: "/#services" }, { label: "Team", href: "/#team" }, { label: "FAQs", href: "/#faq" }] }
+          { items: [{ label: "Services", href: "/services" }, { label: "Team", href: "/team" }, { label: "FAQs", href: "/faq" }] }
         ]}
       />
   </div>
