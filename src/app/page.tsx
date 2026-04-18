@@ -2,14 +2,13 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
 import HeroSplitKpi from '@/components/sections/hero/HeroSplitKpi';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import PricingCardEight from '@/components/sections/pricing/PricingCardEight';
 import TeamCardFive from '@/components/sections/team/TeamCardFive';
-import TestimonialCardSixteen from '@/components/sections/testimonial/TestimonialCardSixteen';
+import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
 
 export default function LandingPage() {
   return (
@@ -30,10 +29,10 @@ export default function LandingPage() {
       <NavbarLayoutFloatingOverlay
       navItems={[
         { name: "About", id: "/about"},
-        { name: "Services", id: "services"},
-        { name: "Team", id: "team"},
-        { name: "Testimonials", id: "testimonials"},
-        { name: "FAQ", id: "faq"},
+        { name: "Services", id: "#services"},
+        { name: "Team", id: "#team"},
+        { name: "Testimonials", id: "#testimonials"},
+        { name: "FAQ", id: "#faq"},
         { name: "Contact", id: "/contact"},
       ]}
       brandName="Lackawanna"
@@ -101,24 +100,27 @@ export default function LandingPage() {
   </div>
 
   <div id="testimonials" data-section="testimonials">
-      <TestimonialCardSixteen
-      animationType="slide-up"
-      textboxLayout="split-description"
-      useInvertedBackground={false}
-      testimonials={[
-        { id: "1", name: "Barry H.", role: "Loyal Customer", company: "FL", rating: 5 },
-        { id: "2", name: "Melissa C.", role: "Regular Client", company: "NY", rating: 5 },
-        { id: "3", name: "Tom K.", role: "Local Resident", company: "NJ", rating: 5 },
-        { id: "4", name: "Sarah J.", role: "Frequent Visitor", company: "NJ", rating: 5 },
-        { id: "5", name: "Michael P.", role: "Client", company: "NY", rating: 5 },
-      ]}
-      kpiItems={[
-        { value: "100+", label: "Weekly Cuts" },
-        { value: "20+", label: "Years Served" },
-        { value: "5★", label: "Rating Average" },
-      ]}
-      title="What Our Clients Say"
-      description="We are proud to serve our community and deliver the best cuts in town."
+    <TestimonialCardTwo
+        animationType="slide-up"
+        textboxLayout="default"
+        title="Testimonials"
+        description="See what our clients say about our work."
+        testimonials={[
+            { 
+                id: "1", 
+                name: "Client One", 
+                role: "Local Customer", 
+                testimonial: "Exceptional service and great atmosphere.", 
+                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776531377369-oo06t3wn.png"
+            },
+            { 
+                id: "2", 
+                name: "Client Two", 
+                role: "Regular Visitor", 
+                testimonial: "Always get a perfect fade here.", 
+                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776531377370-5uotcrix.png"
+            }
+        ]}
     />
   </div>
 
