@@ -2,13 +2,13 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
+import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
+import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
 import HeroSplitKpi from '@/components/sections/hero/HeroSplitKpi';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import PricingCardEight from '@/components/sections/pricing/PricingCardEight';
 import TeamCardFive from '@/components/sections/team/TeamCardFive';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
-import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
-import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
 
 export default function LandingPage() {
   return (
@@ -103,7 +103,6 @@ export default function LandingPage() {
     <TestimonialCardTwo
         animationType="slide-up"
         textboxLayout="default"
-        useInvertedBackground={false}
         title="Testimonials"
         description="See what our clients say about our work."
         testimonials={[
