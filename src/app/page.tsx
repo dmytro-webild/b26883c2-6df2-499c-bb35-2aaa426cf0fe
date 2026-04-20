@@ -91,7 +91,7 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       team={[
-        { id: "t1", name: "John Franco", role: "Master Barber", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352542504-tkr21jqa.png"},
+        { id: "t1", name: "John Franco", role: "Master Barber", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776700270139-bcabar6h.png"},
         { id: "t2", name: "Elio", role: "Old School Specialist", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352566826-2nyt55b1.jpg"},
       ]}
       title="Meet Your Staff"
@@ -112,14 +112,14 @@ export default function LandingPage() {
                 name: "Client One", 
                 role: "Local Customer", 
                 testimonial: "Exceptional service and great atmosphere.", 
-                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776531377369-oo06t3wn.png"
+                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201800-hefnk77v.jpg"
             },
             { 
                 id: "2", 
                 name: "Client Two", 
                 role: "Regular Visitor", 
                 testimonial: "Always get a perfect fade here.", 
-                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776531377370-5uotcrix.png"
+                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CRaO5i0elf1aDIpszoFKWNR31x/uploaded-1776352201801-opcyony6.jpg"
             }
         ]}
     />
